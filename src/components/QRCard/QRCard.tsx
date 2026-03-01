@@ -1,4 +1,4 @@
-type QRCardProps = {
+export type QRCardProps = {
   qrImage: string;
   title: string;
   description: string;
@@ -7,11 +7,9 @@ type QRCardProps = {
 const QRCard = ({ qrImage, title, description }: QRCardProps) => {
   return (
     <>
-      <div>
         <img src={qrImage} alt="QR Code" />
         <h1>{title}</h1>
         <p>{description}</p>
-      </div>
     </>
   );
 };

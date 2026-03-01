@@ -1,6 +1,6 @@
 import qrImage from '../images/image-qr-code.png'
 import './App.css'
-import QRCard from './components/QRCard/QRCard'
+import { QRCard } from './components/QRCard'
 
 function App() {
 
