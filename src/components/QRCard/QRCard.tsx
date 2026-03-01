@@ -1,3 +1,5 @@
+import "./QRCard.css"
+
 export type QRCardProps = {
   qrImage: string;
   title: string;
@@ -6,11 +8,13 @@ export type QRCardProps = {
 
 const QRCard = ({ qrImage, title, description }: QRCardProps) => {
   return (
-    <>
+    <div className="card">
         <img src={qrImage} alt="QR Code" />
-        <h1>{title}</h1>
-        <p>{description}</p>
-    </>
+        <div className="text">
+            <h1 className="title">{title}</h1>
+            <p className="description">{description}</p>
+        </div>
+    </div>
   );
 };
 
